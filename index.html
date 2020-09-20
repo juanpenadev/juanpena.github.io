@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/img/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Juan Pena | Portfolio</title>
 
@@ -13,8 +15,10 @@
 <body>
 
     <!-- navbar -->
+
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase font-weight-bold fixed-top navbar-shrink">
         <div class="container">
+
             <a class="navbar-brand" href="#" style="color: white;">JuanPenaDev</a>
             <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold btn-green text-white rounded" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span>Menu</span>
@@ -23,25 +27,90 @@
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">PORTFOLIO</a>
+                        <a class="nav-link text-white" href="#portfolio">PORTFOLIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">CONTACT</a>
+                        <a class="nav-link text-white" href="#contact">CONTACT</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <!-- --------- -->
 
-    <div class="jumbotron">
-        <img src="assets/img/avatar.svg" alt="avatar picture" width="200">
-        <h1 class="display-4">Juan Pena</h1>
-        <h2>Fullstack Web Developer</h2>
-        <p class="lead">with the philosophy of never stop learning.</p>
+    <header>
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row header-content">
+                    <div class="col-md-12">
+                        <img src="assets/img/avatar.svg" alt="avatar picture" width="200">
+                        <h1 class="display-4">Juan Pena</h1>
+                        <h2>Fullstack Web Developer</h2>
+                        <p class="lead">with the philosophy of never stop learning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="portfolio" class="main">
+        <div class="container">
+            <div class="row">
+                <div class="card col-md-3 col-sm-12 " style="width: auto; margin: auto;">
+                    <img src="assets/img/favoriteband.png" class="card-img-top" alt="Metallica picture">
+                    <div class="card-body">
+                        <h6 class="card-title">My favorite band single page, RUTGERS prework</h6>
+                        <p class="card-text">html5, css3</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://juanpenadev.github.io/myFavoriteBand/" class="btn btn-primary">Visit page</a>
+                        <a href="https://github.com/juanpenadev/myFavoriteBand" class="btn btn-primary">Github</a>
+                    </div>
+                </div>
+                <div class="card col-md-3 col-sm-12 " style="width: auto; margin:auto;">
+                    <img src="assets/img/gravity.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title">GravityCalc , Calculate your weight in other planets</h6>
+                        <p class="card-text">html5, css3, javascript</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://juanpenadev.github.io/gravityCalc/" class="btn btn-primary">Visit page</a>
+                        <a href="https://github.com/juanpenadev/gravityCalc" class="btn btn-primary">Github</a>
+                    </div>
+                </div>
+                <div class="card col-md-3 col-sm-12 " style="width: auto; margin:auto;">
+                    <img src="assets/img/fornite.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title">Fortnite store API</h6>
+                        <p class="card-text">html5, css3, javascript</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://fortnite.eltasbo.com/" class="btn btn-primary">Visit page</a>
+                        <a href="https://github.com/juanpenadev/fortnite" class="btn btn-primary">Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="contact">
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="...">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">...</textarea>
+                </div>
+                <button type="submit" class="btn btn-primary mb-2">Send</button>
+            </form>
+        </div>
     </div>
 
 
